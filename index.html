@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Sarwar J. Minar</title>
+
+  <meta name="description" content="Sarwar J. Minar is a PhD Candidate in International Relations at Florida International University. His research focuses on the United Nations, global governance, rising powers, China, India, human rights, and space governance.">
+  <meta name="keywords" content="Sarwar Minar, Sarwar J Minar, International Relations, Florida International University, United Nations, Global Governance, Rising Powers, China, India, Space Governance">
+  <meta name="author" content="Sarwar J. Minar">
 
   <style>
     body {
@@ -17,27 +22,46 @@
     header {
       background: #1f2937;
       color: white;
-      padding: 45px 20px;
-      text-align: center;
+      padding: 50px 30px;
     }
 
-    .profile-photo {
-      width: 180px;
-      height: 180px;
+    .header-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .header-text h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 18px;
+      margin: 6px 0;
+    }
+
+    .header-photo img {
+      width: 220px;
+      height: 220px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 15px;
-    }
-
-    header h1 {
-      margin-bottom: 5px;
-      font-size: 36px;
-    }
-
-    header p {
-      margin: 5px 0;
-      font-size: 18px;
+      border: 5px solid white;
     }
 
     nav {
@@ -100,18 +124,42 @@
       color: white;
       margin-top: 30px;
     }
+
+    @media (max-width: 700px) {
+      .header-container {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .header-photo img {
+        width: 180px;
+        height: 180px;
+      }
+
+      .header-text h1 {
+        font-size: 34px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Sarwar J. Minar" class="profile-photo">
+  <div class="header-container">
 
-  <h1>Sarwar J. Minar</h1>
-  <p>PhD Candidate in International Relations</p>
-  <p>Florida International University</p>
-  <p>Email: sarwar.minar@gmail.com | mmina010@fiu.edu</p>
+    <div class="header-text">
+      <h1>Sarwar J. Minar</h1>
+      <p class="subtitle">PhD Candidate in International Relations</p>
+      <p>Florida International University</p>
+      <p>Email: sarwar.minar@gmail.com | mmina010@fiu.edu</p>
+    </div>
+
+    <div class="header-photo">
+      <img src="profile.jpg" alt="Sarwar J. Minar">
+    </div>
+
+  </div>
 </header>
 
 <nav>

@@ -11,10 +11,10 @@
   <meta name="keywords" content="Sarwar Minar, Sarwar J Minar, International Relations, Florida International University, United Nations, Global Governance, Rising Powers, China, India, Space Governance">
   <meta name="author" content="Sarwar J. Minar">
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Academicons for Google Scholar, ORCID, etc. -->
+  <!-- Academicons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <style>
@@ -25,13 +25,13 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
       color: #222;
-      background: #f8fafc;
       line-height: 1.6;
     }
 
     a {
-      color: #2563eb;
+      color: #0056c7;
       text-decoration: none;
     }
 
@@ -41,16 +41,16 @@
 
     nav {
       background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-      padding: 16px 30px;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 42px;
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
-    nav .nav-inner {
-      max-width: 1200px;
+    .nav-inner {
+      max-width: 1320px;
       margin: auto;
       display: flex;
       justify-content: space-between;
@@ -58,45 +58,45 @@
       flex-wrap: wrap;
     }
 
-    nav .name {
-      font-size: 24px;
-      font-weight: bold;
-      color: #111827;
+    .site-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #333;
     }
 
-    nav a {
-      color: #334155;
-      margin-left: 18px;
-      font-weight: 600;
-      font-size: 15px;
+    .nav-links a {
+      margin-left: 24px;
+      color: #34495e;
+      font-size: 17px;
+      font-weight: 500;
     }
 
-    nav a:hover {
-      color: #2563eb;
+    .nav-links a:hover {
+      color: #0056c7;
       text-decoration: none;
     }
 
-    .main {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 25px;
+    .hero {
+      max-width: 1320px;
+      margin: 70px auto 40px;
+      padding: 0 30px;
       display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 40px;
+      grid-template-columns: 330px 1fr;
+      gap: 70px;
+      align-items: start;
     }
 
     .sidebar {
-      background: #ffffff;
-      border-radius: 14px;
-      padding: 30px 24px;
       text-align: center;
-      height: fit-content;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 34px 24px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
     }
 
     .profile-photo {
-      width: 230px;
-      height: 230px;
+      width: 240px;
+      height: 240px;
       object-fit: cover;
       border-radius: 50%;
       border: 5px solid #e5e7eb;
@@ -104,164 +104,230 @@
     }
 
     .sidebar h1 {
-      font-size: 31px;
-      margin: 8px 0 6px;
-      color: #111827;
+      font-size: 32px;
+      margin: 12px 0 6px;
+      color: #222;
     }
 
     .sidebar p {
-      margin: 6px 0;
+      margin: 5px 0;
+      color: #666;
       font-size: 16px;
-      color: #4b5563;
     }
 
     .social-icons {
-      margin-top: 20px;
+      margin-top: 22px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 14px;
+      gap: 15px;
     }
 
     .social-icons a {
-      font-size: 24px;
-      color: #2563eb;
+      font-size: 25px;
+      color: #0056c7;
     }
 
     .social-icons a:hover {
-      color: #1d4ed8;
+      color: #003f91;
       text-decoration: none;
     }
 
     .cv-button {
       display: inline-block;
-      margin-top: 22px;
-      background: #2563eb;
-      color: white;
+      margin-top: 24px;
       padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 15px;
+      border: 1px solid #0056c7;
+      border-radius: 6px;
+      color: #0056c7;
+      font-weight: 600;
     }
 
     .cv-button:hover {
-      background: #1d4ed8;
+      background: #0056c7;
       color: white;
       text-decoration: none;
     }
 
     main {
-      background: #ffffff;
-      border-radius: 14px;
-      padding: 36px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+      min-width: 0;
     }
 
     section {
-      margin-bottom: 48px;
+      margin-bottom: 80px;
+      display: grid;
+      grid-template-columns: 310px 1fr;
+      gap: 45px;
+      align-items: start;
     }
 
-    h2 {
-      font-size: 31px;
-      margin-top: 0;
-      margin-bottom: 18px;
-      color: #111827;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 8px;
+    .section-title {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1.15;
+      color: #333;
+      margin: 0;
+    }
+
+    .content-card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 32px 36px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
     }
 
     h3 {
-      color: #1f2937;
-      margin-top: 22px;
-      margin-bottom: 7px;
-      font-size: 20px;
+      font-size: 24px;
+      margin: 0 0 8px;
+      color: #111;
     }
 
-    p {
-      margin-top: 0;
+    h4 {
+      font-size: 21px;
+      margin: 26px 0 8px;
+      color: #111;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 17px;
+      margin-bottom: 8px;
     }
 
     ul {
-      padding-left: 22px;
+      margin-top: 8px;
+      padding-left: 24px;
     }
 
     li {
       margin-bottom: 9px;
+      font-size: 17px;
     }
 
-    .two-column {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
+    .timeline {
+      position: relative;
     }
 
-    .card {
-      background: #f8fafc;
-      border-left: 4px solid #2563eb;
-      padding: 16px 18px;
-      border-radius: 9px;
-      margin-bottom: 16px;
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: -39px;
+      top: 14px;
+      bottom: 14px;
+      width: 2px;
+      background: #1f6fd1;
     }
 
-    .card h3 {
-      margin-top: 0;
+    .timeline-item {
+      position: relative;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 24px 30px;
+      margin-bottom: 38px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.10);
     }
 
-    .meta {
-      color: #64748b;
-      font-size: 15px;
-      margin-bottom: 8px;
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 28px;
+      width: 22px;
+      height: 22px;
+      background: #ffffff;
+      border: 2px solid #1f6fd1;
+      border-radius: 50%;
     }
 
-    .button {
+    .timeline-item:first-child::before {
+      background: #1f6fd1;
+    }
+
+    .timeline-item h3 {
+      color: #666;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .institution {
+      font-size: 22px;
+      color: #111;
+    }
+
+    .publication-item {
+      margin-bottom: 34px;
+      font-size: 20px;
+    }
+
+    .publication-item i {
+      color: #777;
+      margin-right: 9px;
+    }
+
+    .pub-links {
+      margin-top: 10px;
+    }
+
+    .pub-links a {
       display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 11px 18px;
-      border-radius: 7px;
-      font-weight: bold;
+      border: 1px solid #0056c7;
+      border-radius: 5px;
+      padding: 5px 12px;
+      margin-right: 8px;
+      font-size: 15px;
+      color: #0056c7;
     }
 
-    .button:hover {
-      background: #1d4ed8;
+    .pub-links a:hover {
+      background: #0056c7;
       color: white;
       text-decoration: none;
     }
 
     footer {
       text-align: center;
-      padding: 25px;
-      background: #f3f4f6;
-      border-top: 1px solid #e5e7eb;
-      color: #4b5563;
+      padding: 28px;
+      background: #ffffff;
+      border-top: 1px solid #ddd;
+      color: #666;
     }
 
-    @media (max-width: 850px) {
-      .main {
+    @media (max-width: 950px) {
+      .hero {
         grid-template-columns: 1fr;
+        gap: 35px;
       }
 
-      .two-column {
+      section {
         grid-template-columns: 1fr;
+        gap: 20px;
       }
 
-      nav .nav-inner {
+      .section-title {
+        font-size: 40px;
+      }
+
+      .timeline::before,
+      .timeline-item::before {
+        display: none;
+      }
+
+      nav {
+        padding: 18px 20px;
+      }
+
+      .nav-inner {
         display: block;
         text-align: center;
       }
 
-      nav a {
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      .nav-links a {
         display: inline-block;
-        margin: 8px;
-      }
-
-      .profile-photo {
-        width: 200px;
-        height: 200px;
-      }
-
-      main {
-        padding: 26px;
+        margin: 7px 10px;
       }
     }
   </style>
@@ -271,20 +337,21 @@
 
 <nav>
   <div class="nav-inner">
-    <div class="name">Sarwar J. Minar</div>
-    <div>
+    <div class="site-name">Sarwar J. Minar</div>
+    <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#experience">Experience</a>
-      <a href="#awards">Achievements</a>
+      <a href="#awards">Achievements & Services</a>
       <a href="#publications">Publications</a>
       <a href="#conferences">Conferences</a>
+      <a href="#training">Training</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
 
-<div class="main" id="home">
+<div class="hero" id="home">
 
   <aside class="sidebar">
     <img src="profile.jpg" alt="Sarwar J. Minar" class="profile-photo">
@@ -310,226 +377,352 @@
   <main>
 
     <section id="biography">
-      <h2>Biography</h2>
-      <p>
-        Sarwar J. Minar is a PhD Candidate in International Relations at Florida International University. His research focuses on global governance, international organizations, rising powers, human rights, democratization, climate change, space governance, and international relations theory.
-      </p>
-      <p>
-        His dissertation, <strong>The Rising Powers and Multilateral Institutions: An Investigation into the Roles of China and India at the United Nations</strong>, examines how rising powers shape multilateral institutions from within, with particular attention to norm contestation, agenda-setting, and institutional influence in the United Nations system.
-      </p>
+      <h2 class="section-title">Biography</h2>
+      <div class="content-card">
+        <p>
+          Sarwar J. Minar is a PhD Candidate in International Relations at Florida International University. His research focuses on global governance, international organizations, rising powers, human rights, democratization, climate change, space governance, and international relations theory.
+        </p>
+        <p>
+          His dissertation, <strong>The Rising Powers and Multilateral Institutions: An Investigation into the Roles of China and India at the United Nations</strong>, examines how rising powers shape multilateral institutions from within, with particular attention to norm contestation, agenda-setting, and institutional influence in the United Nations system.
+        </p>
+      </div>
     </section>
 
     <section id="research">
-      <div class="two-column">
-        <div>
-          <h2>Research Interests</h2>
-          <p>
-            United Nations, global governance, international organizations, rising powers, China and India, human rights, democratization, climate change, space governance, international security, peacekeeping operations, multilateral institutions, Global South politics, and international relations theory.
-          </p>
-        </div>
+      <h2 class="section-title">Research Interests</h2>
+      <div class="content-card">
+        <p>
+          United Nations, global governance, international organizations, rising powers, China and India, human rights, democratization, climate change, space governance, international security, peacekeeping operations, multilateral institutions, Global South politics, and international relations theory.
+        </p>
 
-        <div>
-          <h2>Education</h2>
-          <ul>
-            <li><strong>PhD in International Relations</strong>, Florida International University, expected Spring 2027</li>
-            <li><strong>MA in Political Science</strong>, Northern Illinois University, 2021</li>
-            <li><strong>MSS in International Relations</strong>, University of Dhaka, 2013</li>
-            <li><strong>BSS in International Relations</strong>, University of Dhaka, 2011</li>
-          </ul>
-        </div>
+        <h4>Education</h4>
+        <ul>
+          <li><strong>PhD in International Relations</strong>, Florida International University, expected Spring 2027</li>
+          <li><strong>MA in Political Science</strong>, Northern Illinois University, 2021</li>
+          <li><strong>MSS in International Relations</strong>, University of Dhaka, 2013</li>
+          <li><strong>BSS in International Relations</strong>, University of Dhaka, 2011</li>
+        </ul>
       </div>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
 
-      <div class="card">
-        <h3>Instructor, Florida International University</h3>
-        <p>INR3502: International Organization; INR3303: Foreign Policymaking.</p>
-      </div>
+        <div class="timeline-item">
+          <h3>Instructor</h3>
+          <div class="institution">Florida International University</div>
+          <p class="meta">INR3502: International Organization; INR3303: Foreign Policymaking</p>
+        </div>
 
-      <div class="card">
-        <h3>Teaching Assistant, Florida International University</h3>
-        <p>Department of Politics and International Relations, 2022–present.</p>
-      </div>
+        <div class="timeline-item">
+          <h3>Teaching Assistant</h3>
+          <div class="institution">Florida International University</div>
+          <p class="meta">Department of Politics and International Relations · 2022–Present</p>
+        </div>
 
-      <div class="card">
-        <h3>Teaching Assistant, Northern Illinois University</h3>
-        <p>Department of Political Science, 2019–2022.</p>
-      </div>
+        <div class="timeline-item">
+          <h3>Teaching Assistant</h3>
+          <div class="institution">Northern Illinois University</div>
+          <p class="meta">Department of Political Science · 2019–2022</p>
+        </div>
 
-      <div class="card">
-        <h3>Research Assistant</h3>
-        <p>International Organization for Migration and Bangladesh Enterprise Institute, 2010.</p>
+        <div class="timeline-item">
+          <h3>Research Assistant</h3>
+          <div class="institution">International Organization for Migration and Bangladesh Enterprise Institute</div>
+          <p class="meta">2010</p>
+        </div>
+
       </div>
     </section>
 
     <section id="awards">
-      <h2>Achievements & Services</h2>
+      <h2 class="section-title">Achievements,<br>Awards, and<br>Services</h2>
+      <div class="content-card">
 
-      <h3>Awards, Fellowships, and Grants</h3>
-      <ul>
-        <li>American Political Science Association Conference Travel Grant, 2026</li>
-        <li>Best Graduate Instructor, Florida International University, 2025</li>
-        <li>Dissertation Evidence Acquisition Fellowship, Florida International University, 2025</li>
-        <li>GPSC Conference Travel Fund, Florida International University, 2023, 2024, 2025, 2026</li>
-        <li>Steven J. Green School Travel Fund, Florida International University, 2024, 2025, 2026</li>
-        <li>Best Teaching Assistant, Florida International University, 2023</li>
-        <li>GPSC Conference Travel Grant, Northern Illinois University, 2021</li>
-        <li>Jan Kiergaard Award for Best Essay, Northern Illinois University, 2021</li>
-      </ul>
+        <h3>Awards, Fellowships, and Grants</h3>
+        <ul>
+          <li>American Political Science Association Conference Travel Grant, 2026</li>
+          <li>Best Graduate Instructor, Florida International University, 2025</li>
+          <li>Dissertation Evidence Acquisition Fellowship, Florida International University, 2025</li>
+          <li>GPSC Conference Travel Fund, Florida International University, 2023, 2024, 2025, 2026</li>
+          <li>Steven J. Green School Travel Fund, Florida International University, 2024, 2025, 2026</li>
+          <li>Best Teaching Assistant, Florida International University, 2023</li>
+          <li>GPSC Conference Travel Grant, Northern Illinois University, 2021</li>
+          <li>Jan Kiergaard Award for Best Essay, Northern Illinois University, 2021</li>
+        </ul>
 
-      <h3>Service</h3>
-      <ul>
-        <li>Graduate Senator, Student Government Association, Florida International University, 2023–2024</li>
-        <li>Graduate & Professional Student Committee Member, Florida International University</li>
-        <li>Democracy Challenge, Northern Illinois University, 2022</li>
-        <li>Peer Reviewer, <em>South Asian Survey</em>, Routledge</li>
-        <li>Peer Reviewer, <em>GeoHumanities</em>, Taylor & Francis</li>
-      </ul>
-    </section>
+        <h3>Service</h3>
+        <ul>
+          <li>Graduate Senator, Student Government Association, Florida International University, 2023–2024</li>
+          <li>Graduate & Professional Student Committee Member, Florida International University</li>
+          <li>Democracy Challenge, Northern Illinois University, 2022</li>
+          <li>Peer Reviewer, <em>South Asian Survey</em>, Routledge</li>
+          <li>Peer Reviewer, <em>GeoHumanities</em>, Taylor & Francis</li>
+        </ul>
 
-    <section id="training">
-      <h2>Certifications & Professional Training</h2>
-
-      <div class="card">
-        <h3>Geopolitics and Global Futures Symposium: The Future of Outer Space Security Module</h3>
-        <p class="meta">Geneva Centre for Security Policy · Issued Jan 2026</p>
       </div>
-
-      <div class="card">
-        <h3>Summer Institute in Computational Social Science</h3>
-        <p class="meta">Florida Atlantic University · 2026</p>
-      </div>
-
     </section>
 
     <section id="publications">
-      <h2>Publications</h2>
+      <h2 class="section-title">Publications</h2>
+      <div class="content-card">
 
-      <h3>Peer-Reviewed Journal Articles</h3>
-      <ul>
-        <li>Sarwar J. Minar, Nomeh Anthony Kanayo, and Yuanhao Tian. “The Shanghai Cooperation Organization and Sustaining Border Peace: A 30-Years Retrospective.” <em>Florida Political Chronicle</em>, 31(2), 2024.</li>
-        <li>Sarwar J. Minar and Abdul Halim. “The Rohingyas of Rakhine State: Social Evolution and History in the Light of Ethnic Nationalism.” <em>Social Evolution and History</em>, 19(2), 2020.</li>
-      </ul>
+        <h3>Peer-Reviewed Journal Articles</h3>
 
-      <h3>Book Reviews</h3>
-      <ul>
-        <li>Sarwar J. Minar. Review of <em>Wolf Warrior Diplomacy and China’s Ministry of Foreign Affairs</em>. <em>Cambridge Review of International Affairs</em>, 2025.</li>
-        <li>Sarwar J. Minar. “Review – China’s Rising Foreign Ministry.” <em>E-International Relations</em>, 2025.</li>
-        <li>Sarwar J. Minar. Review of <em>Inside the UN Security Council: Legitimation Practices and Darfur</em>. <em>International Affairs</em>, 100(6), 2024.</li>
-        <li>Sarwar J. Minar. Review of <em>Practicing Peace: Conflict Management in Southeast Asia and South America</em>. <em>E-International Relations</em>, 2023.</li>
-        <li>Sarwar J. Minar. Review of <em>Grand Strategy</em> by Peter Layton. <em>Small Wars Journal</em>, 2018.</li>
-      </ul>
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong>, Nomeh Anthony Kanayo, and Yuanhao Tian (2024).
+          <a href="#" target="_blank">The Shanghai Cooperation Organization and Sustaining Border Peace: A 30-Years Retrospective.</a>
+          <em>Florida Political Chronicle</em>, 31(2).
+          <div class="pub-links">
+            <a href="#" target="_blank">PDF</a>
+            <a href="#" target="_blank">Cite</a>
+            <a href="#" target="_blank">DOI</a>
+          </div>
+        </div>
 
-      <h3>Newspaper Editorials, Op-Eds, and Perspectives</h3>
-      <ul>
-        <li>Sarwar J. Minar and Abdul Halim. “The Rohingyas: Etymology, Idea, and Identity.” <em>The Asian Age</em>.</li>
-        <li>Sarwar J. Minar. “Revisiting Foreign Policy History of Bangladesh: Opportunism and Risk Management.” <em>The Asian Age</em>.</li>
-        <li>Sarwar J. Minar. “Three Grand Strategies to Meet the 21st Century Rohingya Challenge.” <em>The Asian Age</em>, October 3, 2019.</li>
-        <li>Prof. Milan Pagon and Sarwar J. Minar. “Bangladesh and the World University Rankings.” <em>The Daily Star</em>, October 13, 2018.</li>
-        <li>Sarwar J. Minar. “Understanding the UNO Effectiveness: What Awaits Rohingya Crisis Solution?” <em>The Asian Age</em>, September 9, 2018.</li>
-        <li>Sarwar J. Minar. “Indiscriminate Use of Drugs: An Emerging Health Concern?” <em>The Daily Star</em>, July 22, 2018.</li>
-        <li>Sarwar J. Minar. “How Useful is World University Rankings?” <em>The Independent</em>, July 14, 2018.</li>
-        <li>Sarwar J. Minar. “India’s Global Ambition and Regional Responsibilities.” <em>Daily Our Time</em>, June 29, 2018.</li>
-        <li>Sarwar J. Minar. “International Students in Bangladeshi Universities.” <em>The Financial Express</em>, June 20, 2018.</li>
-        <li>Sarwar J. Minar. “Myanmar: The Yaba-Monger Neighbor.” <em>Daily Our Time</em>, June 10, 2018.</li>
-        <li>Sarwar J. Minar. “Political Conundrum in Bangladesh: In Search of a Sustainable Solution.” <em>Daily Our Time</em>, June 7, 2018.</li>
-        <li>Sarwar J. Minar. “Drug Crime Poses a Major Threat to National Security.” <em>Daily Our Time</em>, June 1, 2018.</li>
-        <li>Sarwar J. Minar. “Understanding World University Rankings.” <em>Daily Our Time</em>, May 29, 2018.</li>
-        <li>Sarwar J. Minar. “Why States Need Grand Strategy.” <em>Daily Our Time</em>, May 25, 2018.</li>
-      </ul>
-    </section>
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> and Abdul Halim (2020).
+          <a href="#" target="_blank">The Rohingyas of Rakhine State: Social Evolution and History in the Light of Ethnic Nationalism.</a>
+          <em>Social Evolution and History</em>, 19(2).
+          <div class="pub-links">
+            <a href="#" target="_blank">PDF</a>
+            <a href="#" target="_blank">Cite</a>
+            <a href="#" target="_blank">DOI</a>
+          </div>
+        </div>
 
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <ul>
-        <li>INR3502: International Organization, Florida International University, Summer 2026</li>
-        <li>INR3303: Foreign Policymaking, Florida International University, Summer 2024, Fall 2024, Spring 2025, Summer 2025</li>
-        <li>Foreign Policy Analysis, International Organizations, American Foreign Policy, and Contemporary International Problems, Florida International University</li>
-        <li>Introductory International Relations, Contemporary Foreign Policy, Environmental Politics, Constitutional Law, and Scope and History of Political Science, Northern Illinois University</li>
-      </ul>
+        <h3>Book Reviews</h3>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2025).
+          <a href="#" target="_blank">Review of <em>Wolf Warrior Diplomacy and China’s Ministry of Foreign Affairs</em>.</a>
+          <em>Cambridge Review of International Affairs</em>.
+          <div class="pub-links">
+            <a href="#" target="_blank">PDF</a>
+            <a href="#" target="_blank">Cite</a>
+            <a href="#" target="_blank">DOI</a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2025).
+          <a href="#" target="_blank">Review – China’s Rising Foreign Ministry.</a>
+          <em>E-International Relations</em>.
+          <div class="pub-links">
+            <a href="#" target="_blank">PDF</a>
+            <a href="#" target="_blank">Cite</a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2024).
+          <a href="#" target="_blank">Review of <em>Inside the UN Security Council: Legitimation Practices and Darfur</em>.</a>
+          <em>International Affairs</em>, 100(6).
+          <div class="pub-links">
+            <a href="#" target="_blank">PDF</a>
+            <a href="#" target="_blank">Cite</a>
+            <a href="#" target="_blank">DOI</a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2023).
+          <a href="#" target="_blank">Review of <em>Practicing Peace: Conflict Management in Southeast Asia and South America</em>.</a>
+          <em>E-International Relations</em>.
+          <div class="pub-links">
+            <a href="#" target="_blank">PDF</a>
+            <a href="#" target="_blank">Cite</a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2018).
+          <a href="#" target="_blank">Review of <em>Grand Strategy</em> by Peter Layton.</a>
+          <em>Small Wars Journal</em>.
+          <div class="pub-links">
+            <a href="#" target="_blank">PDF</a>
+            <a href="#" target="_blank">Cite</a>
+          </div>
+        </div>
+
+        <h3>Newspaper Editorials, Op-Eds, and Perspectives</h3>
+        <ul>
+          <li><strong>Sarwar J. Minar</strong> and Abdul Halim. <a href="#" target="_blank">“The Rohingyas: Etymology, Idea, and Identity.”</a> <em>The Asian Age</em>.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Revisiting Foreign Policy History of Bangladesh: Opportunism and Risk Management.”</a> <em>The Asian Age</em>.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Three Grand Strategies to Meet the 21st Century Rohingya Challenge.”</a> <em>The Asian Age</em>, October 3, 2019.</li>
+          <li>Prof. Milan Pagon and <strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Bangladesh and the World University Rankings.”</a> <em>The Daily Star</em>, October 13, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Understanding the UNO Effectiveness: What Awaits Rohingya Crisis Solution?”</a> <em>The Asian Age</em>, September 9, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Indiscriminate Use of Drugs: An Emerging Health Concern?”</a> <em>The Daily Star</em>, July 22, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“How Useful is World University Rankings?”</a> <em>The Independent</em>, July 14, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“India’s Global Ambition and Regional Responsibilities.”</a> <em>Daily Our Time</em>, June 29, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“International Students in Bangladeshi Universities.”</a> <em>The Financial Express</em>, June 20, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Myanmar: The Yaba-Monger Neighbor.”</a> <em>Daily Our Time</em>, June 10, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Political Conundrum in Bangladesh: In Search of a Sustainable Solution.”</a> <em>Daily Our Time</em>, June 7, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Drug Crime Poses a Major Threat to National Security.”</a> <em>Daily Our Time</em>, June 1, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Understanding World University Rankings.”</a> <em>Daily Our Time</em>, May 29, 2018.</li>
+          <li><strong>Sarwar J. Minar</strong>. <a href="#" target="_blank">“Why States Need Grand Strategy.”</a> <em>Daily Our Time</em>, May 25, 2018.</li>
+        </ul>
+
+      </div>
     </section>
 
     <section id="conferences">
-      <h2>Conference Presentations</h2>
+      <h2 class="section-title">Conference Presentations</h2>
+      <div class="content-card">
 
-      <div class="card">
-        <h3>Shaping from Within: China’s Evolving Institutional Influence at the UN</h3>
-        <p class="meta">APSA Annual Conference, Boston, 2026</p>
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2026).
+          <a href="#" target="_blank">Shaping from Within: China’s Evolving Institutional Influence at the UN.</a>
+          APSA Annual Conference, Boston.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2026).
+          <a href="#" target="_blank">Shaping without Disruption: China’s Influence at the UN in the 21st Century.</a>
+          ISA Annual Convention, Columbus.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2025).
+          <a href="#" target="_blank">Rising Power and Changing Influence at the UN in the 21st Century: How China is Shaping Human Rights Regime.</a>
+          ISA Annual Convention, Chicago.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2024).
+          <a href="#" target="_blank">Investigating China’s Increasing Influence in Latin America.</a>
+          ISA Annual Convention, San Francisco; Midwest Political Science Association Convention; Florida Political Science Association Conference.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2024).
+          <a href="#" target="_blank">The US’s Visa Restriction Policy for Undermining Democratic Process: The Case of Bangladesh.</a>
+          Florida Political Science Association Conference.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2024).
+          <a href="#" target="_blank">The Role of the Shanghai Cooperation Organization in Sustaining Border Peace.</a>
+          Florida Political Science Association Conference.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2023).
+          <a href="#" target="_blank">The UN and Stability Operations: The Changing Norms of the Use of Force in Peacekeeping Operations.</a>
+          ISA Annual Convention, Montréal.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2023).
+          <a href="#" target="_blank">Authoritarian Consolidation in a Transitional Democracy.</a>
+          ISA Annual Convention, Montréal.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2022).
+          <a href="#" target="_blank">Stability Operations in the UN.</a>
+          ISA-South.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2022).
+          <a href="#" target="_blank">From Multi-party System to Hegemonic-party System?</a>
+          Midwest Political Science Association Convention.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2021).
+          <a href="#" target="_blank">Refugees and Host State Security.</a>
+          ISA-Midwest.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2021).
+          <a href="#" target="_blank">Legitimation Strategies of Bangladesh Government.</a>
+          ISA-Midwest.
+        </div>
+
+        <div class="publication-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <strong>Sarwar J. Minar</strong> (2021).
+          <a href="#" target="_blank">Rohingya Refuge in Bangladesh.</a>
+          Midwest Political Science Association Convention; Global Politics Summer Seminar Series, Northern Illinois University.
+        </div>
+
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Shaping without Disruption: China’s Influence at the UN in the 21st Century</h3>
-        <p class="meta">ISA Annual Convention, Columbus, 2026</p>
+    <section id="teaching">
+      <h2 class="section-title">Teaching</h2>
+      <div class="content-card">
+        <ul>
+          <li>INR3502: International Organization, Florida International University, Summer 2026</li>
+          <li>INR3303: Foreign Policymaking, Florida International University, Summer 2024, Fall 2024, Spring 2025, Summer 2025</li>
+          <li>Foreign Policy Analysis, International Organizations, American Foreign Policy, and Contemporary International Problems, Florida International University</li>
+          <li>Introductory International Relations, Contemporary Foreign Policy, Environmental Politics, Constitutional Law, and Scope and History of Political Science, Northern Illinois University</li>
+        </ul>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Rising Power and Changing Influence at the UN in the 21st Century: How China is Shaping Human Rights Regime</h3>
-        <p class="meta">ISA Annual Convention, Chicago, 2025</p>
-      </div>
+    <section id="training">
+      <h2 class="section-title">Certifications & Professional Training</h2>
+      <div class="timeline">
 
-      <div class="card">
-        <h3>Investigating China’s Increasing Influence in Latin America</h3>
-        <p class="meta">ISA Annual Convention, San Francisco, 2024; Midwest Political Science Association Convention, 2024; Florida Political Science Association Conference, 2023</p>
-      </div>
+        <div class="timeline-item">
+          <h3>Summer Institute in Computational Social Science</h3>
+          <div class="institution">SICSS-FAU</div>
+          <p class="meta">Issued Jun 2026</p>
+        </div>
 
-      <div class="card">
-        <h3>The US’s Visa Restriction Policy for Undermining Democratic Process: The Case of Bangladesh</h3>
-        <p class="meta">Florida Political Science Association Conference, 2024</p>
-      </div>
+        <div class="timeline-item">
+          <h3>United Nations Intensive Summer Program</h3>
+          <div class="institution">Seton Hall University</div>
+          <p class="meta">Issued Jun 2026</p>
+        </div>
 
-      <div class="card">
-        <h3>The Role of the Shanghai Cooperation Organization in Sustaining Border Peace</h3>
-        <p class="meta">Florida Political Science Association Conference, 2024</p>
-      </div>
+        <div class="timeline-item">
+          <h3>Geopolitics and Global Futures Symposium: The Future of Outer Space Security Module</h3>
+          <div class="institution">Geneva Centre for Security Policy</div>
+          <p class="meta">Issued Jan 2026</p>
+        </div>
 
-      <div class="card">
-        <h3>The UN and Stability Operations: The Changing Norms of the Use of Force in Peacekeeping Operations</h3>
-        <p class="meta">ISA Annual Convention, Montréal, 2023</p>
-      </div>
-
-      <div class="card">
-        <h3>Authoritarian Consolidation in a Transitional Democracy</h3>
-        <p class="meta">ISA Annual Convention, Montréal, 2023</p>
-      </div>
-
-      <div class="card">
-        <h3>Stability Operations in the UN</h3>
-        <p class="meta">ISA-South, 2022</p>
-      </div>
-
-      <div class="card">
-        <h3>From Multi-party System to Hegemonic-party System?</h3>
-        <p class="meta">Midwest Political Science Association Convention, 2022</p>
-      </div>
-
-      <div class="card">
-        <h3>Refugees and Host State Security</h3>
-        <p class="meta">ISA-Midwest, 2021</p>
-      </div>
-
-      <div class="card">
-        <h3>Legitimation Strategies of Bangladesh Government</h3>
-        <p class="meta">ISA-Midwest, 2021</p>
-      </div>
-
-      <div class="card">
-        <h3>Rohingya Refuge in Bangladesh</h3>
-        <p class="meta">Midwest Political Science Association Convention, 2021; Global Politics Summer Seminar Series, Northern Illinois University, 2021</p>
       </div>
     </section>
 
     <section id="cv">
-      <h2>CV</h2>
-      <p>You can download my full CV below.</p>
-      <a class="button" href="CV.pdf" target="_blank">Download CV</a>
+      <h2 class="section-title">CV</h2>
+      <div class="content-card">
+        <p>You can download my full CV below.</p>
+        <a class="cv-button" href="CV.pdf" target="_blank">Download CV</a>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> sarwar.minar@gmail.com | mmina010@fiu.edu</p>
-      <p><strong>Affiliation:</strong> Department of Politics and International Relations, Florida International University</p>
+      <h2 class="section-title">Contact</h2>
+      <div class="content-card">
+        <p><strong>Email:</strong> <a href="mailto:sarwar.minar@gmail.com">sarwar.minar@gmail.com</a> | <a href="mailto:mmina010@fiu.edu">mmina010@fiu.edu</a></p>
+        <p><strong>Affiliation:</strong> Department of Politics and International Relations, Florida International University</p>
+      </div>
     </section>
 
   </main>

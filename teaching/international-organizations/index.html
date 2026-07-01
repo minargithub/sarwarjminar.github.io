@@ -11,38 +11,56 @@
     body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f6f7f9; color: #222; line-height: 1.65; }
     a { color: #0b5ed7; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     .topbar { background: #1f1f1f; color: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.18); }
     .nav { max-width: 1180px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; }
     .brand { font-size: 22px; font-weight: 700; padding: 20px 0; color: #fff; }
     .links { display: flex; gap: 2px; flex-wrap: wrap; }
     .links a { color: #fff; padding: 22px 18px; font-weight: 600; }
     .links a:hover { background: #0b5ed7; text-decoration: none; }
+
     .wrap { max-width: 1180px; margin: 28px auto; padding: 0 24px; display: grid; grid-template-columns: 265px 1fr; gap: 34px; align-items: start; }
     .sidebar { position: sticky; top: 96px; background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
     .sidebar-title { background: #0b5ed7; color: #fff; padding: 13px 18px; font-size: 18px; font-weight: 700; }
     .sidebar a { display: block; padding: 10px 18px; color: #222; font-size: 16px; }
     .sidebar a:hover { background: #eef4ff; color: #0b5ed7; text-decoration: none; }
+
     .hero { background: #e6e6e6; padding: 72px 76px; margin-bottom: 28px; }
     .hero h1 { margin: 0 0 18px; font-size: 48px; font-weight: 300; letter-spacing: .3px; }
     .hero h2 { margin: 0 0 12px; font-size: 34px; font-weight: 300; }
     .hero p { margin: 0; font-size: 21px; color: #555; }
+
     section { background: #fff; border-radius: 8px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 3px 12px rgba(0,0,0,.07); scroll-margin-top: 92px; }
     h3 { font-size: 27px; margin: 0 0 14px; color: #111; }
     h4 { font-size: 20px; margin: 24px 0 8px; }
+
     .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
     .info-box, .card { border: 1px solid #e1e5ea; border-radius: 8px; padding: 16px 18px; background: #fbfcfe; }
     .info-box strong { display: block; color: #444; }
     .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
     .card h4 { margin-top: 0; color: #0b5ed7; }
+
     details { border: 1px solid #e1e5ea; border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; background: #fbfcfe; }
     summary { cursor: pointer; font-weight: 700; color: #111; }
     ul { margin-top: 8px; padding-left: 22px; }
     li { margin-bottom: 7px; }
-    .button { display: inline-block; border: 1px solid #0b5ed7; color: #0b5ed7; padding: 8px 14px; border-radius: 6px; font-weight: 700; margin-right: 8px; }
+
+    .button { display: inline-block; border: 1px solid #0b5ed7; color: #0b5ed7; padding: 8px 14px; border-radius: 6px; font-weight: 700; margin-right: 8px; margin-bottom: 8px; }
     .button:hover { background: #0b5ed7; color: #fff; text-decoration: none; }
     footer { text-align: center; color: #666; padding: 28px; }
-    @media (max-width: 900px) { .wrap { grid-template-columns: 1fr; } .sidebar { position: static; } .hero { padding: 48px 30px; } .hero h1 { font-size: 40px; } .info-grid, .cards { grid-template-columns: 1fr; } }
-    @media (max-width: 640px) { .nav { display: block; text-align: center; } .links { justify-content: center; } .links a { padding: 10px 12px; } }
+
+    @media (max-width: 900px) {
+      .wrap { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .hero { padding: 48px 30px; }
+      .hero h1 { font-size: 40px; }
+      .info-grid, .cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav { display: block; text-align: center; }
+      .links { justify-content: center; }
+      .links a { padding: 10px 12px; }
+    }
   </style>
 </head>
 <body>
@@ -69,7 +87,7 @@
       <a href="#readings">Textbook and Readings</a>
       <a href="#schedule">Weekly Schedule</a>
       <a href="#assignments">Assignments</a>
-      <a href="#grading">Grading</a>
+      <a href="#grading">Grading Overview</a>
       <a href="#approach">Teaching Approach</a>
       <a href="#resources">Resources</a>
     </aside>
@@ -87,7 +105,7 @@
       </section>
 
       <section id="instructor">
-        <h3>Instructor</h3>
+        <h3>Instructor and Course Information</h3>
         <div class="info-grid">
           <div class="info-box"><strong>Instructor</strong>Sarwar J. Minar</div>
           <div class="info-box"><strong>Email</strong><a href="mailto:mmina010@fiu.edu">mmina010@fiu.edu</a></div>
@@ -100,7 +118,7 @@
         <h3>Learning Outcomes</h3>
         <ul>
           <li>Explain the evolution of international organizations and global governance.</li>
-          <li>Apply major theories of international relations to international organizations.</li>
+          <li>Understand major theories of international relations and apply them to international organizations.</li>
           <li>Analyze the structure and functions of the United Nations.</li>
           <li>Evaluate debates surrounding UN reform and global governance.</li>
           <li>Compare the roles of major regional organizations.</li>
@@ -109,27 +127,28 @@
 
       <section id="readings">
         <h3>Textbook and Readings</h3>
-        <p><strong>Required:</strong> Jussi M. Hanhimäki, <em>The United Nations: A Very Short Introduction</em>, 2nd ed., Oxford University Press.</p>
-        <p><strong>Recommended:</strong> Tamar Gutner, <em>International Organization in World Politics</em>; Karns, Mingst, and Stiles, <em>International Organization</em>; Weiss and Wilkinson, <em>International Organization and Global Governance</em>; M. J. Peterson, <em>The UN General Assembly</em>.</p>
+        <p><strong>Required textbook:</strong> Jussi M. Hanhimäki, <em>The United Nations: A Very Short Introduction</em>, 2nd ed., Oxford University Press.</p>
+        <p><strong>Recommended readings:</strong> Tamar Gutner, <em>International Organization in World Politics</em>; Margaret P. Karns, Karen A. Mingst, and Kendall W. Stiles, <em>International Organization: The Politics and Processes of Global Governance</em>; Thomas G. Weiss and Rorden Wilkinson, <em>International Organization and Global Governance</em>; M. J. Peterson, <em>The UN General Assembly</em>.</p>
+        <p>Additional UN documents, journal articles, and supplementary readings are provided through Canvas.</p>
       </section>
 
       <section id="schedule">
         <h3>Weekly Schedule</h3>
-        <details open><summary>Week 1: Introduction, Key Concepts, and IR Theories</summary><ul><li>What are international organizations?</li><li>Global governance and multilateralism</li><li>Realist, liberal, institutionalist, and constructivist approaches</li></ul></details>
-        <details><summary>Week 2: Origins of the United Nations</summary><ul><li>League of Nations</li><li>World War II and the UN Charter</li><li>Principal organs and institutional design</li><li>United Nations Security Council</li></ul></details>
-        <details><summary>Week 3: UN General Assembly, ECOSOC, and ICJ</summary><ul><li>Representation and voting</li><li>Development and economic cooperation</li><li>International law and dispute settlement</li></ul></details>
-        <details><summary>Week 4: Secretariat, Secretary-General, and NGOs</summary><ul><li>Role of the Secretary-General</li><li>UN bureaucracy</li><li>NGOs and transnational actors</li></ul></details>
-        <details><summary>Week 5: UN Reform and Future of Global Governance</summary><ul><li>Security Council reform</li><li>Human rights and peacekeeping challenges</li><li>Effectiveness and legitimacy debates</li></ul></details>
-        <details><summary>Week 6: Regional Organizations</summary><ul><li>NATO, European Union, African Union, ASEAN, and OAS</li><li>Regionalism and global governance</li><li>Comparing institutional roles and limits</li></ul></details>
+        <details open><summary>Week 1: Introduction, Key Concepts, and IR Theories</summary><ul><li>What are international organizations?</li><li>Global governance, bilateralism, trilateralism, and multilateralism</li><li>Realist, liberal, institutionalist, and constructivist approaches</li></ul></details>
+        <details><summary>Week 2: Origins of the United Nations</summary><ul><li>League of Nations</li><li>World War II and the creation of the UN</li><li>UN Charter and principal organs</li><li>United Nations Security Council</li></ul></details>
+        <details><summary>Week 3: UN General Assembly, ECOSOC, and ICJ</summary><ul><li>Representation and voting in the General Assembly</li><li>Economic and social cooperation through ECOSOC</li><li>International law and dispute settlement through the ICJ</li></ul></details>
+        <details><summary>Week 4: Secretariat, Secretary-General, and NGOs</summary><ul><li>Role of the Secretary-General</li><li>UN bureaucracy and Secretariat leadership</li><li>NGOs, civil society, and transnational actors</li></ul></details>
+        <details><summary>Week 5: UN Reform and Future of Global Governance</summary><ul><li>Security Council reform debates</li><li>Human rights, peacekeeping, and institutional legitimacy</li><li>Effectiveness and accountability in global governance</li></ul></details>
+        <details><summary>Week 6: Regional Organizations</summary><ul><li>NATO, European Union, African Union, ASEAN, and OAS</li><li>Regionalism and global governance</li><li>Comparing institutional roles, strengths, and limits</li></ul></details>
       </section>
 
       <section id="assignments">
         <h3>Assignments</h3>
         <div class="cards">
-          <div class="card"><h4>Weekly Reading Quizzes</h4><p>Short quizzes designed to encourage steady reading and concept review.</p></div>
+          <div class="card"><h4>Weekly Reading Quizzes</h4><p>Short quizzes designed to encourage steady reading, concept review, and preparation for class discussion.</p></div>
           <div class="card"><h4>Handwritten Reflection Memos</h4><p>Brief analytical memos connecting theories, readings, and class discussions.</p></div>
           <div class="card"><h4>Mini Research Project</h4><p>Students collect and analyze evidence on international organizations and member-state behavior.</p></div>
-          <div class="card"><h4>In-Class Activities</h4><p>Simulations, debates, role-playing exercises, and group problem-solving tasks.</p></div>
+          <div class="card"><h4>In-Class Activities</h4><p>Simulations, debates, role-playing exercises, group problem-solving tasks, and applied theory exercises.</p></div>
         </div>
       </section>
 
@@ -140,13 +159,14 @@
           <li>Weekly Handwritten Reflection Memos: 5%</li>
           <li>Mini Research Project: 15%</li>
           <li>Final Examination: 20%</li>
+          <li>Poster Presentation: optional extra credit</li>
           <li>Additional participation, activities, and course components follow the official Canvas syllabus.</li>
         </ul>
       </section>
 
       <section id="approach">
         <h3>Teaching Approach</h3>
-        <p>This course emphasizes active learning through application of IR theories to IOs, debates, simulations, collaborative exercises, role-playing activities, and discussions based on real-world international organizations and United Nations documents.</p>
+        <p>This course emphasizes active learning through application of IR theories to international organizations, debates, simulations, collaborative exercises, role-playing activities, and discussions based on real-world international organizations and United Nations documents.</p>
       </section>
 
       <section id="resources">

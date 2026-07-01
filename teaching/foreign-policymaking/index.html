@@ -1,139 +1,191 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INR 3303: Foreign Policymaking | Sarwar J. Minar</title>
+  <meta name="description" content="INR 3303 Foreign Policymaking course page taught by Sarwar J. Minar at Florida International University.">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f6f7f9; color: #222; line-height: 1.65; }
+    a { color: #0b5ed7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-<title>Foreign Policymaking | Sarwar J. Minar</title>
+    .topbar { background: #1f1f1f; color: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.18); }
+    .nav { max-width: 1180px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; }
+    .brand { font-size: 22px; font-weight: 700; padding: 20px 0; color: #fff; }
+    .links { display: flex; gap: 2px; flex-wrap: wrap; }
+    .links a { color: #fff; padding: 22px 18px; font-weight: 600; }
+    .links a:hover { background: #0b5ed7; text-decoration: none; }
 
+    .wrap { max-width: 1180px; margin: 28px auto; padding: 0 24px; display: grid; grid-template-columns: 265px 1fr; gap: 34px; align-items: start; }
+    .sidebar { position: sticky; top: 96px; background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+    .sidebar-title { background: #0b5ed7; color: #fff; padding: 13px 18px; font-size: 18px; font-weight: 700; }
+    .sidebar a { display: block; padding: 10px 18px; color: #222; font-size: 16px; }
+    .sidebar a:hover { background: #eef4ff; color: #0b5ed7; text-decoration: none; }
+
+    .hero { background: #e6e6e6; padding: 72px 76px; margin-bottom: 28px; }
+    .hero h1 { margin: 0 0 18px; font-size: 48px; font-weight: 300; letter-spacing: .3px; }
+    .hero h2 { margin: 0 0 12px; font-size: 34px; font-weight: 300; }
+    .hero p { margin: 0; font-size: 21px; color: #555; }
+
+    section { background: #fff; border-radius: 8px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 3px 12px rgba(0,0,0,.07); scroll-margin-top: 92px; }
+    h3 { font-size: 27px; margin: 0 0 14px; color: #111; }
+    h4 { font-size: 20px; margin: 24px 0 8px; }
+
+    .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .info-box, .card { border: 1px solid #e1e5ea; border-radius: 8px; padding: 16px 18px; background: #fbfcfe; }
+    .info-box strong { display: block; color: #444; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card h4 { margin-top: 0; color: #0b5ed7; }
+
+    details { border: 1px solid #e1e5ea; border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; background: #fbfcfe; }
+    summary { cursor: pointer; font-weight: 700; color: #111; }
+    ul { margin-top: 8px; padding-left: 22px; }
+    li { margin-bottom: 7px; }
+
+    .button { display: inline-block; border: 1px solid #0b5ed7; color: #0b5ed7; padding: 8px 14px; border-radius: 6px; font-weight: 700; margin-right: 8px; margin-bottom: 8px; }
+    .button:hover { background: #0b5ed7; color: #fff; text-decoration: none; }
+    footer { text-align: center; color: #666; padding: 28px; }
+
+    @media (max-width: 900px) {
+      .wrap { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .hero { padding: 48px 30px; }
+      .hero h1 { font-size: 40px; }
+      .info-grid, .cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav { display: block; text-align: center; }
+      .links { justify-content: center; }
+      .links a { padding: 10px 12px; }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="topbar">
+    <div class="nav">
+      <a class="brand" href="../../">Sarwar J. Minar</a>
+      <div class="links">
+        <a href="../../">Home</a>
+        <a href="../../#teaching">Teaching</a>
+        <a href="#overview">Overview</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#resources">Resources</a>
+      </div>
+    </div>
+  </div>
 
-<h1>Foreign Policymaking (INR 3303)</h1>
+  <div class="wrap">
+    <aside class="sidebar">
+      <div class="sidebar-title">INR 3303</div>
+      <a href="#overview">Course Overview</a>
+      <a href="#instructor">Instructor</a>
+      <a href="#objectives">Course Objectives</a>
+      <a href="#readings">Textbook and Readings</a>
+      <a href="#schedule">Weekly Topics</a>
+      <a href="#assignments">Course Components</a>
+      <a href="#grading">Assessment Overview</a>
+      <a href="#approach">Teaching Approach</a>
+      <a href="#resources">Resources</a>
+    </aside>
 
-<h3>Florida International University</h3>
+    <main>
+      <div class="hero" id="overview">
+        <h1>INR 3303</h1>
+        <h2>Foreign Policymaking</h2>
+        <p>Florida International University · Spring 2025 · RVC</p>
+      </div>
 
-<p>
-<strong>Instructor:</strong> Sarwar J. Minar<br>
-<strong>Email:</strong> mminar@fiu.edu<br>
-<strong>Semester:</strong> Spring 2025<br>
-<strong>Section:</strong> RVC<br>
-<strong>Course Format:</strong> Fully Online and Asynchronous<br>
-<strong>Time Zone:</strong> Eastern Time (ET)
-</p>
+      <section>
+        <h3>Course Overview</h3>
+        <p>This course explores major theoretical approaches to the study of foreign policy and examines the factors, influences, and processes that shape foreign policymaking across different states. Students evaluate and analyze foreign policies through major theoretical lenses and assess the impact of different actors, institutions, and contexts in the foreign policymaking process.</p>
+      </section>
 
-<p>
-<a href="https://minargithub.github.io/sarwarjminar.github.io/">← Back to Academic Website</a>
-</p>
+      <section id="instructor">
+        <h3>Instructor and Course Information</h3>
+        <div class="info-grid">
+          <div class="info-box"><strong>Instructor</strong>Sarwar J. Minar</div>
+          <div class="info-box"><strong>Email</strong><a href="mailto:mmina010@fiu.edu">mmina010@fiu.edu</a></div>
+          <div class="info-box"><strong>Format</strong>Fully online and asynchronous</div>
+          <div class="info-box"><strong>Time Zone</strong>Eastern Time (ET)</div>
+        </div>
+      </section>
 
-<hr>
+      <section id="objectives">
+        <h3>Course Objectives</h3>
+        <ul>
+          <li>Introduce students to the spectrum of foreign policymaking.</li>
+          <li>Identify and discuss factors influencing foreign policy decisions.</li>
+          <li>Analyze and apply theoretical perspectives from International Relations.</li>
+          <li>Evaluate the impact of different factors in the foreign policymaking process.</li>
+          <li>Explain the foreign policies of different states in the contemporary world.</li>
+        </ul>
+      </section>
 
-<h2>Course Description</h2>
+      <section id="readings">
+        <h3>Textbook and Readings</h3>
+        <p><strong>Required textbook:</strong> Laura Neack, <em>Studying Foreign Policy Comparatively</em>. Lanham, MD: Rowman & Littlefield, 2019.</p>
+        <p><strong>Optional reading:</strong> Cameron G. Thies, ed., <em>The Oxford Encyclopedia of Foreign Policy Analysis</em>. Oxford University Press, 2018.</p>
+        <p>Additional articles and book chapters are provided through weekly Canvas modules.</p>
+      </section>
 
-<p>
-This course explores major theoretical approaches to the study of foreign policy and examines the factors, influences, and processes that shape foreign policymaking across different states. Students evaluate and analyze foreign policies through major theoretical lenses and assess the impact of different actors, institutions, and contexts in the foreign policymaking process.
-</p>
+      <section id="schedule">
+        <h3>Weekly Topics</h3>
+        <details open><summary>Module 1: Introduction to Foreign Policy Analysis</summary><ul><li>What is foreign policy?</li><li>Levels of analysis and comparative foreign policy</li></ul></details>
+        <details><summary>Module 2: Anarchy and Foreign Policy</summary><ul><li>Security, survival, and international constraints</li><li>Foreign policy under uncertainty</li></ul></details>
+        <details><summary>Module 3: Interdependence and International Organizations</summary><ul><li>Economic interdependence</li><li>International institutions and foreign policy choices</li></ul></details>
+        <details><summary>Module 4: Norms and Laws</summary><ul><li>International norms</li><li>Legal commitments and foreign policy behavior</li></ul></details>
+        <details><summary>Module 5: Leadership</summary><ul><li>Individual leaders</li><li>Beliefs, perceptions, and decision-making styles</li></ul></details>
+        <details><summary>Module 6: Small Groups and Decision-Making</summary><ul><li>Advisory systems</li><li>Groupthink and bureaucratic politics</li></ul></details>
+        <details><summary>Module 7: Domestic Politics</summary><ul><li>Political institutions</li><li>Interest groups and domestic constraints</li></ul></details>
+        <details><summary>Module 8: National Culture</summary><ul><li>Identity, history, and political culture</li><li>Strategic culture and foreign policy</li></ul></details>
+        <details><summary>Module 9: Public Opinion</summary><ul><li>Media, public preferences, and foreign policy accountability</li></ul></details>
+        <details><summary>Module 10: Comparative Foreign Policy Cases</summary><ul><li>Applying theories to real-world cases</li><li>Comparing state behavior</li></ul></details>
+        <details><summary>Module 11: Contemporary Foreign Policy Challenges</summary><ul><li>Global crises, great-power competition, and policy dilemmas</li></ul></details>
+      </section>
 
-<hr>
+      <section id="assignments">
+        <h3>Course Components</h3>
+        <div class="cards">
+          <div class="card"><h4>Syllabus Quiz</h4><p>A short quiz confirming course expectations, policies, and key requirements.</p></div>
+          <div class="card"><h4>Weekly Discussions</h4><p>Online discussions connecting theories, readings, and contemporary foreign policy cases.</p></div>
+          <div class="card"><h4>Reading Quizzes</h4><p>Regular quizzes designed to encourage steady engagement with weekly materials.</p></div>
+          <div class="card"><h4>Final Paper</h4><p>A research-based paper applying foreign policy concepts to a selected case.</p></div>
+        </div>
+      </section>
 
-<h2>Course Objectives</h2>
+      <section id="grading">
+        <h3>Assessment Overview</h3>
+        <ul>
+          <li>Syllabus Quiz: 1 point</li>
+          <li>Weekly Discussions: 11 points</li>
+          <li>Weekly Reading Quizzes: 22 points</li>
+          <li>Abstract/Proposal of Paper: 6 points</li>
+          <li>Two Exams: 40 points</li>
+          <li>Final Paper: 20 points</li>
+          <li><strong>Total: 100 points</strong></li>
+        </ul>
+      </section>
 
-<ul>
-<li>Introduce students to the spectrum of foreign policymaking.</li>
-<li>Identify and discuss factors influencing foreign policy decisions.</li>
-<li>Analyze and apply theoretical perspectives from International Relations.</li>
-<li>Evaluate the impact of different factors in the foreign policymaking process.</li>
-<li>Explain the foreign policies of different states in the contemporary world.</li>
-</ul>
+      <section id="approach">
+        <h3>Teaching Approach</h3>
+        <p>This course emphasizes theoretical application, case-based analysis, and critical engagement with contemporary foreign policy decisions. Students connect foreign policy theories with real-world cases and develop analytical skills through discussions, quizzes, written assignments, and a final research paper.</p>
+      </section>
 
-<hr>
+      <section id="resources">
+        <h3>Resources</h3>
+        <p>
+          <a class="button" href="../../#teaching">Back to Teaching</a>
+          <a class="button" href="../../CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </p>
+        <p><strong>Last updated:</strong> Spring 2025</p>
+      </section>
+    </main>
+  </div>
 
-<h2>Required Textbook</h2>
-
-<ul>
-<li>
-Laura Neack. <em>Studying Foreign Policy Comparatively</em>. Lanham, MD: Rowman & Littlefield, 2019.
-</li>
-</ul>
-
-<h2>Optional Reading</h2>
-
-<ul>
-<li>
-Cameron G. Thies, ed. <em>The Oxford Encyclopedia of Foreign Policy Analysis</em>. Oxford University Press, 2018.
-</li>
-<li>Additional articles and book chapters provided through weekly Canvas modules.</li>
-</ul>
-
-<hr>
-
-<h2>Weekly Topics</h2>
-
-<ul>
-<li>Introduction to Foreign Policy Analysis</li>
-<li>Anarchy and Foreign Policy</li>
-<li>Interdependence and International Organizations</li>
-<li>Norms and Laws</li>
-<li>Leadership</li>
-<li>Small Groups and Decision-Making</li>
-<li>Domestic Politics</li>
-<li>National Culture</li>
-<li>Public Opinion</li>
-<li>Comparative Foreign Policy Cases</li>
-<li>Contemporary Foreign Policy Challenges</li>
-</ul>
-
-<hr>
-
-<h2>Course Components</h2>
-
-<ul>
-<li>Syllabus Quiz</li>
-<li>Weekly Discussions</li>
-<li>Weekly Reading Quizzes</li>
-<li>Abstract/Proposal of Paper</li>
-<li>Two Exams</li>
-<li>Final Paper</li>
-<li>Optional Extra Credit Assignment</li>
-</ul>
-
-<hr>
-
-<h2>Assessment Overview</h2>
-
-<ul>
-<li>Syllabus Quiz: 1 point</li>
-<li>Weekly Discussions: 11 points</li>
-<li>Weekly Reading Quizzes: 22 points</li>
-<li>Abstract/Proposal of Paper: 6 points</li>
-<li>Exams: 40 points</li>
-<li>Final Paper: 20 points</li>
-<li>Total: 100 points</li>
-</ul>
-
-<hr>
-
-<h2>Teaching Approach</h2>
-
-<p>
-This course emphasizes theoretical application, case-based analysis, and critical engagement with contemporary foreign policy decisions. Students connect foreign policy theories with real-world cases and develop analytical skills through discussions, quizzes, written assignments, and a final research paper.
-</p>
-
-<hr>
-
-<p>
-<strong>Last Updated:</strong> Spring 2025
-</p>
-
-<hr>
-
-<p>
-© 2025 Sarwar J. Minar | Florida International University
-</p>
-
+  <footer>© 2025 Sarwar J. Minar | Florida International University</footer>
 </body>
-
 </html>
